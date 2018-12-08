@@ -1,16 +1,16 @@
 @extends('layout.layout')
 
-<?php $img_location = 'https://via.placeholder.com/150x80/0CCF1D/F41D11?text='; ?>
+<?php $img_location = 'https://via.placeholder.com/150x80/0CCF1D/ff0000?text='; ?>
 
 @section('content')
     <div class="row">
         <div class="col-sm-3">
             <a href="/categories/scuba">
-                <img src=<?= $img_location . 'SCUBA' ?> class="img-responsive"
+                <img src=<?= $img_location . 'Scuba' ?> class="img-responsive"
                      style="width:100%" alt="Image">
             </a>
 
-            <p>SCUBA</p>
+            <p>Scuba</p>
         </div>
 
         <div class="col-sm-3">

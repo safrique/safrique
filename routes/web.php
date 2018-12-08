@@ -19,27 +19,27 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/categories/basketball', function () {
+Route::get('/basketball', function () {
     return view('categories.basketball');
 });
 
-Route::get('/categories/dev', function () {
+Route::get('/dev', function () {
     return view('categories.dev');
 });
 
-Route::get('/categories/music', function () {
+Route::get('/music', function () {
     return view('categories.music');
 });
 
-Route::get('/categories/scuba', function () {
+Route::get('/scuba', function () {
     return view('categories.scuba');
 });
 
-Route::get('/challenges/20-hour-challenges', function () {
+Route::get('/challenges', function () {
     return view('challenges.20-hour-challenges');
 });
 
-Route::get('/members/login', function () {
+Route::get('/login', function () {
     return view('members.login');
 });
 

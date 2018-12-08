@@ -19,6 +19,14 @@
             border-radius: 0;
         }
 
+        .navbar-bigger {
+            font-size: 110%;
+        }
+
+        .carousel-control {
+            color: #ff0000;
+        }
+
         /* Add a gray background color and some padding to the footer */
         footer {
             background-color: #2eb82e;
@@ -42,8 +50,10 @@
 
 <body>
 
+{{--Nav bar--}}
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
+        {{--Collapsed nav bar button--}}
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
@@ -51,28 +61,31 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand">safrique</a>
+            <a class="navbar-brand" href="/">safrique</a>
         </div>
 
+        {{--Left nav bar--}}
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li class="active"><a href="/" class="navbar-bigger">HOME</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/categories/scuba">SCUBA</a></li>
-                <li><a href="/categories/basketball">Basketball</a></li>
-                <li><a href="/categories/music">Music</a></li>
-                <li><a href="/categories/dev">Development</a></li>
-                <li><a href="/challenges/20-hour-challenges">20 Hour Challenges</a></li>
+                <li><a href="/scuba">Scuba</a></li>
+                <li><a href="/basketball">Basketball</a></li>
+                <li><a href="/music">Music</a></li>
+                <li><a href="/dev">Development</a></li>
+                <li><a href="/challenges">20 Hour Challenges</a></li>
             </ul>
 
+            {{--Right nav bar--}}
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/blog"><span class="nav navbar-nav"></span>blog</a></li>
-                <li><a href="/members/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+{{--Picture carousel--}}
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -83,15 +96,14 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <?php $img_location = 'https://via.placeholder.com/1200x400/0CCF1D/F41D11?text='; ?>
+    <?php $img_location = 'https://via.placeholder.com/1200x400/0CCF1D/ff0000?text='; ?>
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <img src=<?= $img_location . 'SCUBA' ?> alt="Image">
-            {{--<img src="/resources/img/corals-deep-deep-sea-1540108.jpg" alt="SCUBA Image">--}}
 
             <div class="carousel-caption">
-                <h3>SCUBA</h3>
+                <h3>Scuba</h3>
 
                 <p>Some scuba text</p>
             </div>
@@ -121,14 +133,14 @@
             <img src=<?= $img_location . 'Development' ?> alt="Image">
 
             <div class="carousel-caption">
-                <h3>Dev & Analytics</h3>
+                <h3>Development</h3>
 
-                <p>Some dev & analytics text</p>
+                <p>Some development text</p>
             </div>
         </div>
     </div>
 
-    <!-- Left and right controls -->
+    <!-- Left and right controls - buttons to move carousel -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
