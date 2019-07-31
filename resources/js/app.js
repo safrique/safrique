@@ -1,13 +1,15 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+import './bootstrap'
+import Vue from 'vue'
+// import routes from './routes'
+import VueRouter from 'vue-router'
 
-window.Vue = require('vue');
+window.Vue = Vue
 
 /**
  * The following block of code may be used to automatically register your
@@ -17,7 +19,31 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+import ExampleComponent from './components/ExampleComponent.vue'
+Vue.component('example-component', ExampleComponent)
+
+import Test from './components/ExampleComponent'
+const routes = [
+    {
+        path: `/test/vue`,
+        name: 'test',
+        component: Test,
+    },
+]
+
+/**
+ * Vue Router
+ */
+Vue.use(VueRouter)
+
+/**
+ *
+ * @type {VueRouter}
+ */
+let router = new VueRouter({
+    routes,
+    mode: 'history',
+})
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
@@ -28,6 +54,29 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app'
-});
+// const main = new Vue({
+//     el: '#main',
+//     router,
+//
+//     data: {
+//         message: 'Hello main Vue!'
+//     }
+// })
+//
+// const categories = new Vue({
+//     el: '#categories',
+//     router,
+//
+//     data: {
+//         message: 'Hello Categories Vue!'
+//     }
+// })
+
+const test = new Vue({
+    el: '#test',
+    router,
+
+    data: {
+        message: 'Hello TEST Vue!'
+    }
+})
