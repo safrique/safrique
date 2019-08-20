@@ -14,7 +14,7 @@
 
     <example-component></example-component>
 
-    <Test></Test>
+{{--    <Test></Test>--}}
 
     <router-view></router-view>
 </div>

@@ -1,6 +1,7 @@
 <template>
-    <div>
-        Some Categories text here {{ message }}
+    <div class="categories">
+        Some Categories text here <br>
+        Message: {{ message }}
     </div>
 </template>
 

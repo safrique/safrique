@@ -1,17 +1,25 @@
 import Categories from './components/categories/Categories'
-import Test from './components/ExampleComponent'
+import Basketball from './components/categories/basketball/Basketball'
+
+// import ExampleComponent from './components/ExampleComponent'
 
 const routes = [
+    // {
+    //     path: `/test`,
+    //     name: 'test',
+    //     component: ExampleComponent,
+    // },
+
     {
-        path: `/categories/main`,
+        path: `/categories`,
         name: 'categories',
         component: Categories,
     },
 
     {
-        path: `/test/vue`,
-        name: 'test',
-        component: Test,
+        path: `/categories/basketball`,
+        name: 'basketball',
+        component: Basketball,
     },
 ]
 

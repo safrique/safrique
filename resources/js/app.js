@@ -1,9 +1,3 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 import './bootstrap'
 import Vue from 'vue'
 // import routes from './routes'
@@ -19,15 +13,31 @@ window.Vue = Vue
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-import ExampleComponent from './components/ExampleComponent.vue'
-Vue.component('example-component', ExampleComponent)
+// import ExampleComponent from './components/ExampleComponent'
+// Vue.component('example-component', ExampleComponent)
 
-import Test from './components/ExampleComponent'
+// import Test from './components/ExampleComponent'
+// const routes = [
+//     {
+//         path: `/test/vue`,
+//         name: 'test',
+//         component: ExampleComponent,
+//     },
+// ]
+
+const Foo = { template: '<div>foo</div>' }
+const Bar = { template: '<div>bar</div>' }
+
+import Basketball from './components/categories/basketball/Basketball'
+
 const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar },
+
     {
-        path: `/test/vue`,
-        name: 'test',
-        component: Test,
+        path: `/basketball`,
+        // name: 'basketball',
+        component: Basketball,
     },
 ]
 
@@ -40,7 +50,7 @@ Vue.use(VueRouter)
  *
  * @type {VueRouter}
  */
-let router = new VueRouter({
+const router = new VueRouter({
     routes,
     mode: 'history',
 })
@@ -62,21 +72,21 @@ let router = new VueRouter({
 //         message: 'Hello main Vue!'
 //     }
 // })
-//
+
 // const categories = new Vue({
 //     el: '#categories',
 //     router,
+// }).$mount('#categories')
+
+const app = new Vue({
+    router
+}).$mount('#app')
+
+// const test = new Vue({
+//     el: '#test',
+//     router,
 //
 //     data: {
-//         message: 'Hello Categories Vue!'
+//         message: 'Hello TEST Vue!'
 //     }
 // })
-
-const test = new Vue({
-    el: '#test',
-    router,
-
-    data: {
-        message: 'Hello TEST Vue!'
-    }
-})
