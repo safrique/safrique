@@ -1,23 +1,17 @@
 <?php
 
-//Route::get('/', 'HomeController@index')
-//    ->name('home')
-//    ->description('Dashboard');
-
-//Route::view('/test/{any}', 'test')->where('any', '.*');
-//Route::view('/test', 'test');
-
-
 Route::view('/categories', 'categories.categories');
 Route::view('/categories/{any}', 'categories.categories')->where('any', '.*');
 
+Route::view('/', 'home.welcome');
+Route::view('/about', 'home.about');
 
-//Route::view('/', 'home.welcome');
-//
-//Route::get('/', function () {
-//    return view('home.welcome');
-//});
-//
+Route::view('/site-layout', 'layout.site_layout');
+
+
+
+
+
 //Route::get('/about', function () {
 //    return view('home.about');
 //});

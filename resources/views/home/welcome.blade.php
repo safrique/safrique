@@ -1,9 +1,7 @@
 @extends('home.layout')
 
 @section('welcome-content')
-    <div>
+    <div class="welcome_content">
         Welcome
-
-        <router-view></router-view>
     </div>
 @endsection
