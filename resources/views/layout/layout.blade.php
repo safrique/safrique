@@ -21,18 +21,50 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 4em;
+        }
+
+        .built-with {
+            text-align: center;
+        }
+
+        .built-with a {
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
+<header class="home_navbar">
+    @include('layout.home_navbar')
+</header>
 
-<div class="site_layout">
-    <h1 style="text-align: center">safrique</h1>
-    @yield('site-content')
+<div class="content">
+    <h1>safrique</h1>
+
+    <div class="site_layout">
+        @yield('site-layout')
+    </div>
+
+    <div class="about_me">
+        @yield('about-me')
+    </div>
+
+    <div class="home_content">
+        @yield('home-content')
+    </div>
 </div>
 
-<div class="home_content">
-    @yield('home-content')
-</div>
+<footer>
+    @include('layout.home_footer')
+</footer>
 
 </body>
 </html>

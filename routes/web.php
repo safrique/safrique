@@ -5,8 +5,7 @@ Route::view('/categories/{any}', 'categories.categories')->where('any', '.*');
 
 Route::view('/', 'home.welcome');
 Route::view('/about', 'home.about');
-
-Route::view('/site-layout', 'layout.site_layout');
+Route::view('/site-layout', 'home.site_layout');
 
 
 

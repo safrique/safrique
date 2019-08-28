@@ -22,13 +22,33 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+    <style>
+        .categories-layout {
+            margin-top: 2em;
+        }
+    </style>
 </head>
 
 <body>
-<div id="categories" class="categories">
-    <router-link to="/categories">Categories:</router-link>
 
-    <router-view></router-view>
+<div id="categories">
+    <div class="navbar">
+        <navbar></navbar>
+    </div>
+
+    <div class="categories-layout">
+        <div class="level">
+            <h1 class="subtitle is-2 level-item has-text-centered">safrique</h1>
+        </div>
+
+        {{--    <router-link to="/categories">--}}
+        {{--        <span class="icon is-small"><i class="fa fa-bars" aria-hidden="true"></i></span>--}}
+        {{--        <span>Categories</span>--}}
+        {{--    </router-link>--}}
+
+        <router-view></router-view>
+    </div>
 </div>
 </body>
 </html>

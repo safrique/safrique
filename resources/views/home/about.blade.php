@@ -1,5 +1,9 @@
-@extends('home.layout')
+@extends('layout.layout')
 
-@section('content')
-    <h1>about me</h1>
+@section('about-me')
+    <div class="container about_me">
+        <h3>About me</h3>
+
+        Something about me
+    </div>
 @endsection

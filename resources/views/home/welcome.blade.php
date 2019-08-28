@@ -2,6 +2,8 @@
 
 @section('welcome-content')
     <div class="welcome_content">
-        Welcome
+        <h3>Welcome</h3>
+
+        Welcome to my home page
     </div>
 @endsection

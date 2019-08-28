@@ -3,6 +3,9 @@ import Vue from 'vue'
 import routes from './routes'
 import VueRouter from 'vue-router'
 
+import Navbar from './components/categories/Navbar'
+Vue.component('Navbar', Navbar)
+
 window.Vue = Vue
 
 /**
