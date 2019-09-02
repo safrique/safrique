@@ -1,5 +1,7 @@
 <template>
-
+    <div class="scuba">
+        SCUBA
+    </div>
 </template>
 
 <script>

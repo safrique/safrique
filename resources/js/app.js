@@ -4,7 +4,11 @@ import routes from './routes'
 import VueRouter from 'vue-router'
 
 import Navbar from './components/categories/Navbar'
+
 Vue.component('Navbar', Navbar)
+
+// import Categories from './components/categories/Categories'
+// Vue.component('categories', Categories)
 
 window.Vue = Vue
 
@@ -40,9 +44,34 @@ const router = new VueRouter({
 //     }
 // })
 
-const categories = new Vue({
+// const categories = new Vue({
+//     el: '#categories',
+//     router,
+//
+//     // components: {
+//     //     // categories,
+//     // },
+//     //
+//     // data: {
+//     //     message: 'Vue categories is working...',
+//     // },
+// // })
+// }).$mount('#categories')
+
+new Vue({
     el: '#categories',
     router,
+
+    components: {
+        // categories,
+    },
+
+    created () {
+        console.log('new Vue created')
+    },
+
+    methods: {
+    },
 }).$mount('#categories')
 
 // const app = new Vue({

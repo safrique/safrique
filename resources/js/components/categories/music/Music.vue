@@ -1,5 +1,7 @@
 <template>
-
+    <div class="music">
+        MUSIC
+    </div>
 </template>
 
 <script>

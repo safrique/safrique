@@ -48,6 +48,8 @@
         {{--    </router-link>--}}
 
         <router-view></router-view>
+
+{{--        <categories></categories>--}}
     </div>
 </div>
 </body>

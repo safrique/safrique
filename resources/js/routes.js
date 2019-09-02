@@ -8,14 +8,14 @@ const routes = [
         component: Categories,
         props: true,
 
-        children: [
-            {
-                path: `basketball`,
-                name: 'basketball',
-                component: Basketball,
-                props: true,
-            },
-        ]
+        // children: [
+        //     {
+        //         path: `basketball`,
+        //         name: 'basketball',
+        //         component: Basketball,
+        //         props: true,
+        //     },
+        // ]
     },
 ]
 
