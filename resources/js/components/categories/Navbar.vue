@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="vue_navbar" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href="/">
                     <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
@@ -21,8 +21,10 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary"><strong>Sign up</strong></a>
-                        <a class="button is-warning">Log in</a>
+                        <button class="button is-primary unfinished" id="vue_signup_btn"><strong>Sign up</strong>
+                        </button>
+
+                        <button class="button is-warning unfinished" id="vue_login_btn">Log in</button>
                     </div>
                 </div>
             </div>
@@ -34,6 +36,13 @@
   export default {
     name: 'Navbar'
   }
+
+  $(document).ready(function () { // https://stackoverflow.com/questions/47591474/how-to-switch-through-tabs-in-bulma
+    $('.unfinished').on('click', function () {
+      let item = `#${this.id}`
+      alert(`${$(item).prop('nodeName')} (${item}) not yet set up`)
+    })
+  })
 </script>
 
 <style scoped>

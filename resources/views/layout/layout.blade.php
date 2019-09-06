@@ -38,6 +38,13 @@
         .built-with a {
             font-style: italic;
         }
+
+        /*#home_footer {*/
+        /*    position: fixed;*/
+        /*    height: 100px;*/
+        /*    bottom: 0;*/
+        /*    width: 100%;*/
+        /*}*/
     </style>
 </head>
 

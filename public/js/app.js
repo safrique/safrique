@@ -14835,6 +14835,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__);
 
 
 
@@ -14842,87 +14844,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.component('Navbar', __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar___default.a);
-
-// import Categories from './components/categories/Categories'
-// Vue.component('categories', Categories)
 
 window.Vue = __WEBPACK_IMPORTED_MODULE_1_vue___default.a;
 
-/**
- * Vue Router
- */
 __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]);
 
-/**
- *
- * @type {VueRouter}
- */
 var router = new __WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]({
     routes: __WEBPACK_IMPORTED_MODULE_2__routes__["a" /* default */],
     mode: 'history'
 });
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-// const main = new Vue({
-//     el: '#main',
-//     router,
-//
-//     data: {
-//         message: 'Hello main Vue!'
-//     }
-// })
-
-// const categories = new Vue({
-//     el: '#categories',
-//     router,
-//
-//     // components: {
-//     //     // categories,
-//     // },
-//     //
-//     // data: {
-//     //     message: 'Vue categories is working...',
-//     // },
-// // })
-// }).$mount('#categories')
-
 new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
     el: '#categories',
     router: router,
 
-    components: {
-        // categories,
-    },
-
-    created: function created() {
-        console.log('new Vue created');
-    },
-
-
-    methods: {}
+    components: { Navbar: __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar___default.a, VueFooter: __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer___default.a }
 }).$mount('#categories');
-
-// const app = new Vue({
-//     router
-// }).$mount('#app')
-
-// const test = new Vue({
-//     el: '#test',
-//     router,
-//
-//     data: {
-//         message: 'Hello TEST Vue!'
-//     }
-// })
 
 /***/ }),
 /* 19 */
@@ -49794,36 +49731,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-$(document).ready(function () {
-  $('#tabs li').on('click', function () {
-    var tab = $(this).data('tab');
-
-    $('#tabs li').removeClass('is-active');
-    $(this).addClass('is-active');
-
-    $('#tab-content p').removeClass('is-active');
-    $('p[data-content="' + tab + '"]').addClass('is-active');
-  });
-});
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
-// Vue.component('basketball', require('./basketball/Basketball').default)
-// Vue.component('basketball', basketball)
-// Vue.component('music', music)
-// Vue.component('scuba', scuba)
-// Vue.component('development', development)
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Categories',
-
-  // created () {
-  //   // console.log(Vue.$data.message)
-  // },
 
   components: {
     basketball: __WEBPACK_IMPORTED_MODULE_0__basketball_Basketball___default.a,
@@ -49831,6 +49759,18 @@ $(document).ready(function () {
     scuba: __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba___default.a,
     development: __WEBPACK_IMPORTED_MODULE_3__development_Development___default.a
   }
+});
+
+$(document).ready(function () {
+  // https://stackoverflow.com/questions/47591474/how-to-switch-through-tabs-in-bulma
+  $('#tabs li').on('click', function () {
+    var tab = $(this).data('tab');
+    // alert(tab)
+    $('#tabs li').removeClass('is-active');
+    $(this).addClass('is-active');
+    $('#tab-content p').removeClass('is-active');
+    $('p[data-content="' + tab + '"]').addClass('is-active');
+  });
 });
 
 /***/ }),
@@ -50309,21 +50249,36 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "categories" }, [
-    _c("div", { staticClass: "tabs is-toggle is-fullwidth" }, [
-      _c("ul", [
-        _c(
-          "li",
-          { staticClass: "is-active" },
-          [_vm._m(0), _vm._v(" "), _c("basketball")],
-          1
-        ),
-        _vm._v(" "),
-        _c("li", [_vm._m(1), _vm._v(" "), _c("music")], 1),
-        _vm._v(" "),
-        _c("li", [_vm._m(2), _vm._v(" "), _c("scuba")], 1),
-        _vm._v(" "),
-        _c("li", [_vm._m(3), _vm._v(" "), _c("development")], 1)
-      ])
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "tab-content" } }, [
+      _c(
+        "p",
+        { staticClass: "is-active", attrs: { "data-content": "basketball" } },
+        [_vm._v("\n            Basketball\n            "), _c("basketball")],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { attrs: { "data-content": "music" } },
+        [_vm._v("\n            Music\n            "), _c("music")],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { attrs: { "data-content": "scuba" } },
+        [_vm._v("\n            Scuba\n            "), _c("scuba")],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { attrs: { "data-content": "development" } },
+        [_vm._v("\n            Development\n            "), _c("development")],
+        1
+      )
     ])
   ])
 }
@@ -50332,58 +50287,71 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", [
-      _c("span", { staticClass: "icon is-small" }, [
-        _c("i", {
-          staticClass: "fas fa-basketball-ball",
-          attrs: { "aria-hidden": "true" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("span", [_vm._v("Basketball")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", [
-      _c("span", { staticClass: "icon is-small" }, [
-        _c("i", {
-          staticClass: "fas fa-music",
-          attrs: { "aria-hidden": "true" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("span", [_vm._v("Music")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", [
-      _c("span", { staticClass: "icon is-small" }, [
-        _c("img", { attrs: { src: __webpack_require__(70) } })
-      ]),
-      _vm._v(" "),
-      _c("span", [_vm._v("Scuba")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", [
-      _c("span", { staticClass: "icon is-small" }, [
-        _c("i", {
-          staticClass: "fas fa-laptop",
-          attrs: { "aria-hidden": "true" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("span", [_vm._v("Development")])
-    ])
+    return _c(
+      "div",
+      { staticClass: "tabs is-toggle is-fullwidth", attrs: { id: "tabs" } },
+      [
+        _c("ul", [
+          _c(
+            "li",
+            { staticClass: "is-active", attrs: { "data-tab": "basketball" } },
+            [
+              _c("a", [
+                _c("span", { staticClass: "icon is-small" }, [
+                  _c("i", {
+                    staticClass: "fas fa-basketball-ball",
+                    attrs: { "aria-hidden": "true" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Basketball")])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("li", { attrs: { "data-tab": "music" } }, [
+            _c("a", [
+              _c("span", { staticClass: "icon is-small" }, [
+                _c("i", {
+                  staticClass: "fas fa-music",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v("Music")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { attrs: { "data-tab": "scuba" } }, [
+            _c("a", [
+              _c("span", { staticClass: "icon is-small" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(70),
+                    alt: "scuba icon"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v("Scuba")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { attrs: { "data-tab": "development" } }, [
+            _c("a", [
+              _c("span", { staticClass: "icon is-small" }, [
+                _c("i", {
+                  staticClass: "fas fa-laptop",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v("Development")])
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -53168,7 +53136,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -53211,9 +53179,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Navbar'
+});
+
+$(document).ready(function () {
+  // https://stackoverflow.com/questions/47591474/how-to-switch-through-tabs-in-bulma
+  $('.unfinished').on('click', function () {
+    var item = '#' + this.id;
+    alert($(item).prop('nodeName') + ' (' + item + ') not yet set up');
+  });
 });
 
 /***/ }),
@@ -53238,67 +53216,73 @@ var staticRenderFns = [
         attrs: { role: "navigation", "aria-label": "main navigation" }
       },
       [
-        _c(
-          "div",
-          { staticClass: "navbar-menu", attrs: { id: "navbarBasicExample" } },
-          [
-            _c("div", { staticClass: "navbar-start" }, [
-              _c("a", { staticClass: "navbar-item", attrs: { href: "/" } }, [
-                _c("span", { staticClass: "icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-home",
-                    attrs: { "aria-hidden": "true" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                { staticClass: "navbar-item", attrs: { href: "/categories" } },
-                [_vm._v("Categories")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "navbar-item has-dropdown is-hoverable" },
-                [
-                  _c("a", { staticClass: "navbar-link" }, [_vm._v("More")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "navbar-dropdown" }, [
-                    _c(
-                      "a",
-                      { staticClass: "navbar-item", attrs: { href: "/about" } },
-                      [_vm._v("About")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "navbar-item",
-                        attrs: { href: "/site-layout" }
-                      },
-                      [_vm._v("Site layout")]
-                    )
-                  ])
-                ]
-              )
+        _c("div", { staticClass: "navbar-menu", attrs: { id: "vue_navbar" } }, [
+          _c("div", { staticClass: "navbar-start" }, [
+            _c("a", { staticClass: "navbar-item", attrs: { href: "/" } }, [
+              _c("span", { staticClass: "icon" }, [
+                _c("i", {
+                  staticClass: "fa fa-home",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "navbar-end" }, [
-              _c("div", { staticClass: "navbar-item" }, [
-                _c("div", { staticClass: "buttons" }, [
-                  _c("a", { staticClass: "button is-primary" }, [
-                    _c("strong", [_vm._v("Sign up")])
-                  ]),
+            _c(
+              "a",
+              { staticClass: "navbar-item", attrs: { href: "/categories" } },
+              [_vm._v("Categories")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "navbar-item has-dropdown is-hoverable" },
+              [
+                _c("a", { staticClass: "navbar-link" }, [_vm._v("More")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "navbar-dropdown" }, [
+                  _c(
+                    "a",
+                    { staticClass: "navbar-item", attrs: { href: "/about" } },
+                    [_vm._v("About")]
+                  ),
                   _vm._v(" "),
-                  _c("a", { staticClass: "button is-warning" }, [
-                    _vm._v("Log in")
-                  ])
+                  _c(
+                    "a",
+                    {
+                      staticClass: "navbar-item",
+                      attrs: { href: "/site-layout" }
+                    },
+                    [_vm._v("Site layout")]
+                  )
                 ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "navbar-end" }, [
+            _c("div", { staticClass: "navbar-item" }, [
+              _c("div", { staticClass: "buttons" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-primary unfinished",
+                    attrs: { id: "vue_signup_btn" }
+                  },
+                  [_c("strong", [_vm._v("Sign up")])]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-warning unfinished",
+                    attrs: { id: "vue_login_btn" }
+                  },
+                  [_vm._v("Log in")]
+                )
               ])
             ])
-          ]
-        )
+          ])
+        ])
       ]
     )
   }
@@ -53317,6 +53301,193 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(82)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(84)
+/* template */
+var __vue_template__ = __webpack_require__(85)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-731dab53"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/categories/Footer.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-731dab53", Component.options)
+  } else {
+    hotAPI.reload("data-v-731dab53", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(83);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("28b803b5", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-731dab53\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-731dab53\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\na[data-v-731dab53] {\n    font-style: italic;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Footer'
+});
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "vue-footer footer has-text-centered",
+        attrs: { id: "vue_footer" }
+      },
+      [
+        _c("div", [
+          _c("div", { staticClass: "built-with" }, [
+            _vm._v("\n            Built with "),
+            _c(
+              "a",
+              { attrs: { href: "https://vuejs.org/", target: "_blank" } },
+              [_vm._v("Vue.js")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { attrs: { href: "https://vuex.vuejs.org/", target: "_blank" } },
+              [_vm._v("VueX")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { attrs: { href: "https://router.vuejs.org", target: "_blank" } },
+              [_vm._v("Vue Router")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { attrs: { href: "https://bulma.io/", target: "_blank" } },
+              [_vm._v("Bulma")]
+            ),
+            _vm._v("\n            & "),
+            _c("a", { attrs: { href: "https://jquery.com/" } }, [
+              _vm._v("JQuery")
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-731dab53", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

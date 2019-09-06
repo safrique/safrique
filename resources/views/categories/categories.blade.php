@@ -13,6 +13,12 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <!-- JQuery -->
+    <!-- TODO: Make JQuery work from npm instead -->
+    {{--    <script src="{{ asset('jquery-3.4.1.min.js') }}"></script>--}}
+    {{--    <script src="jquery-3.4.1.min.js"></script>--}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -27,7 +33,16 @@
         .categories-layout {
             margin-top: 2em;
         }
+
+        .test {
+            margin-top: 5em;
+            margin-left: 1em;
+        }
     </style>
+
+    <script type="text/javascript">
+      $(document).ready(function () {$(`#test_button`).click(function () {alert(`working`)})})
+    </script>
 </head>
 
 <body>
@@ -42,14 +57,15 @@
             <h1 class="subtitle is-2 level-item has-text-centered">safrique</h1>
         </div>
 
-        {{--    <router-link to="/categories">--}}
-        {{--        <span class="icon is-small"><i class="fa fa-bars" aria-hidden="true"></i></span>--}}
-        {{--        <span>Categories</span>--}}
-        {{--    </router-link>--}}
-
         <router-view></router-view>
 
-{{--        <categories></categories>--}}
+        <div class="test">
+            <button id="test_button">test</button>
+        </div>
+    </div>
+
+    <div class="vue-footer">
+        <vue-footer></vue-footer>
     </div>
 </div>
 </body>
