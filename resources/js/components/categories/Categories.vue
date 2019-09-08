@@ -1,5 +1,6 @@
 <template>
     <div class="categories">
+        <!-- TODO: Change tabs to not be scrollable on mobile view but dropdown instead -->
         <div class="tabs is-toggle is-fullwidth" id="tabs">
             <ul>
                 <li class="is-active" data-tab="basketball">
@@ -32,21 +33,18 @@
             </ul>
         </div>
 
+        <!-- TODO: Add carousel of images at the top of each component -->
         <div id="tab-content">
             <p class="is-active" data-content="basketball">
-                Basketball
                 <basketball></basketball>
             </p>
             <p data-content="music">
-                Music
                 <music></music>
             </p>
             <p data-content="scuba">
-                Scuba
                 <scuba></scuba>
             </p>
             <p data-content="development">
-                Development
                 <development></development>
             </p>
         </div>

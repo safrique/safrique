@@ -1,4 +1,5 @@
 <template>
+    <!-- TODO: Fix mobile responsive issue - nav bar not showing -->
     <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
         <div id="vue_navbar" class="navbar-menu">
             <div class="navbar-start">
