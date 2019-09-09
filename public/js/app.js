@@ -14818,7 +14818,7 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(18);
-module.exports = __webpack_require__(82);
+module.exports = __webpack_require__(85);
 
 
 /***/ }),
@@ -14832,10 +14832,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__);
 
 
@@ -49564,7 +49564,7 @@ var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(49)
 /* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(72)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -49687,8 +49687,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__music_Music___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__music_Music__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scuba_Scuba__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_Development__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_Development__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_Development___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__development_Development__);
+//
+//
+//
+//
 //
 //
 //
@@ -49756,19 +49760,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     music: __WEBPACK_IMPORTED_MODULE_1__music_Music___default.a,
     scuba: __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba___default.a,
     development: __WEBPACK_IMPORTED_MODULE_3__development_Development___default.a
-  }
-});
+  },
 
-$(document).ready(function () {
-  // https://stackoverflow.com/questions/47591474/how-to-switch-through-tabs-in-bulma
-  $('#tabs li').on('click', function () {
-    var tab = $(this).data('tab');
-    // alert(tab)
-    $('#tabs li').removeClass('is-active');
-    $(this).addClass('is-active');
-    $('#tab-content p').removeClass('is-active');
-    $('p[data-content="' + tab + '"]').addClass('is-active');
-  });
+  data: function data() {
+    return { selected_tab: 'basketball' };
+  }
 });
 
 /***/ }),
@@ -49806,7 +49802,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*.top_image {*/\n/*    max-height: 13em;*/\n/*}*/\n\n/*.images {*/\n/*    text-align: center;*/\n/*}*/\n\n/*.component_content {*/\n/*    margin: 2em;*/\n/*}*/\n", ""]);
+exports.push([module.i, "\n.images[data-v-a199d1f2] {\n    display: inline-block;\n}\n", ""]);
 
 // exports
 
@@ -49836,9 +49832,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Basketball'
+  name: 'Basketball',
+
+  data: function data() {
+    return {
+      second: 0,
+      pos: 0,
+      img: ['../../../../img/basketball/emile-victor-portenart-zjEsQhDD39I-unsplash.jpg', '../../../../img/basketball/jc-dela-cuesta-itqkcMEix64-unsplash.jpg', '../../../../img/basketball/rosie-yang-6Bc9E0YwGWI-unsplash.jpg', '../../../../img/basketball/radek-ijh6OPRrwO8-unsplash.jpg', '../../../../img/basketball/yassine-khalfalli-WVv_oO-IQy8-unsplash.jpg']
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    window.setInterval(function () {
+      _this.getMS();
+    }, 2000);
+  },
+
+
+  methods: {
+    getMS: function getMS() {
+      var ms = new Date();
+      this.second = ms.getMilliseconds();
+      this.pos = this.pos > 1 ? 0 : this.pos + 1;
+    }
+  }
 });
 
 /***/ }),
@@ -49849,46 +49876,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "basketball" }, [
-      _c("div", { staticClass: "images" }, [
-        _c("img", {
-          staticClass: "top_image",
-          attrs: {
-            src: __webpack_require__(86),
-            alt: "basketball court"
-          }
-        }),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "top_image",
-          attrs: {
-            src: __webpack_require__(87),
-            alt: "basketball court"
-          }
-        }),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "top_image",
-          attrs: {
-            src: __webpack_require__(88),
-            alt: "basketball court"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "component_content" }, [
-        _vm._v("\n        BASKETBALL\n    ")
-      ])
+  return _c("div", { staticClass: "basketball" }, [
+    _c("div", { staticClass: "images" }, [
+      _c("img", {
+        staticClass: "top_image",
+        attrs: { src: _vm.img[_vm.pos], alt: "basketball court" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "images" }, [
+      _c("img", {
+        staticClass: "top_image",
+        attrs: { src: _vm.img[_vm.pos + 1], alt: "basketball court" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "images" }, [
+      _c("img", {
+        staticClass: "top_image",
+        attrs: { src: _vm.img[_vm.pos + 2], alt: "basketball court" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "images" }, [
+      _c("img", {
+        staticClass: "top_image",
+        attrs: { src: _vm.img[_vm.pos + 3], alt: "basketball court" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "images" }, [
+      _c("img", {
+        staticClass: "top_image",
+        attrs: { src: _vm.img[_vm.pos + 4], alt: "basketball court" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "component_content" }, [
+      _vm._v("\n        BASKETBALL " + _vm._s(_vm.second) + "\n    ")
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -50112,7 +50141,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*.top_image {*/\n/*    max-height: 13em;*/\n/*}*/\n\n/*.images {*/\n/*    text-align: center;*/\n/*}*/\n\n/*.component_content {*/\n/*    margin: 2em;*/\n/*}*/\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*.images {*/\n/*    display: inline-block;*/\n/*    position: relative;*/\n/*    float: left;*/\n/*}*/\n.top_image[data-v-08c991f1] {\n    display: inline;\n    margin: 0px;\n    padding: 0px;\n    vertical-align: middle;\n    width: 200px;\n}\n.images_parent[data-v-08c991f1] {\n    display: block;\n    margin: 0px;\n    padding: 0px;\n    position: relative;\n    top: 90px;\n    height: auto;\n    max-width: auto;\n    overflow-y: hidden;\n    overflow-x: auto;\n    word-wrap: normal;\n    white-space: nowrap;\n}\n\n/*.images_parent {*/\n/*    white-space: nowrap;*/\n/*}*/\n\n/*.row::after {*/\n/*    content: \"\";*/\n/*    clear: both;*/\n/*    display: table;*/\n/*}*/\n", ""]);
 
 // exports
 
@@ -50123,6 +50152,20 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*.top_
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -50161,7 +50204,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "scuba" }, [
-      _c("div", { staticClass: "images" }, [
+      _c("div", { staticClass: "images_parent" }, [
+        _c("img", {
+          staticClass: "top_image",
+          attrs: {
+            src: __webpack_require__(64),
+            alt: "scuba image"
+          }
+        }),
+        _vm._v(" "),
         _c("img", {
           staticClass: "top_image",
           attrs: {
@@ -50172,13 +50223,24 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("img", {
           staticClass: "top_image",
-          attrs: { src: __webpack_require__(89), alt: "me scuba" }
+          attrs: {
+            src: __webpack_require__(65),
+            alt: "me scuba"
+          }
         }),
         _vm._v(" "),
         _c("img", {
           staticClass: "top_image",
           attrs: {
-            src: __webpack_require__(91),
+            src: __webpack_require__(66),
+            alt: "scuba image"
+          }
+        }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "top_image",
+          attrs: {
+            src: __webpack_require__(89),
             alt: "scuba image"
           }
         })
@@ -50201,18 +50263,36 @@ if (false) {
 
 /***/ }),
 /* 64 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/sebastian-pena-lambarri-7i5HMCGupVw-unsplash.jpg?519432ec350f72e53d866b8e3e5e936e";
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/me.jpg?1c9c9f9e070891b59b93996a9d81feed";
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/sebastian-pena-lambarri-ld4VubWXTuI-unsplash.jpg?c6b7285dca06ce1ec409f79160eb2ad1";
+
+/***/ }),
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(65)
+  __webpack_require__(68)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(67)
+var __vue_script__ = __webpack_require__(70)
 /* template */
-var __vue_template__ = __webpack_require__(68)
+var __vue_template__ = __webpack_require__(71)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50251,13 +50331,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 65 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(66);
+var content = __webpack_require__(69);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50277,7 +50357,7 @@ if(false) {
 }
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -50291,7 +50371,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50308,7 +50388,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50330,7 +50410,7 @@ if (false) {
 }
 
 /***/ }),
-/* 69 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50338,23 +50418,131 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "categories" }, [
-    _vm._m(0),
+    _c(
+      "div",
+      { staticClass: "tabs is-toggle is-fullwidth", attrs: { id: "tabs" } },
+      [
+        _c("ul", [
+          _c(
+            "li",
+            {
+              class: { "is-active": _vm.selected_tab === "basketball" },
+              attrs: { "data-tab": "basketball" },
+              on: {
+                click: function($event) {
+                  _vm.selected_tab = "basketball"
+                }
+              }
+            },
+            [_vm._m(0)]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              class: { "is-active": _vm.selected_tab === "music" },
+              attrs: { "data-tab": "music" },
+              on: {
+                click: function($event) {
+                  _vm.selected_tab = "music"
+                }
+              }
+            },
+            [_vm._m(1)]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              class: { "is-active": _vm.selected_tab === "scuba" },
+              attrs: { "data-tab": "scuba" },
+              on: {
+                click: function($event) {
+                  _vm.selected_tab = "scuba"
+                }
+              }
+            },
+            [_vm._m(2)]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              class: { "is-active": _vm.selected_tab === "development" },
+              attrs: { "data-tab": "development" },
+              on: {
+                click: function($event) {
+                  _vm.selected_tab = "development"
+                }
+              }
+            },
+            [_vm._m(3)]
+          )
+        ])
+      ]
+    ),
     _vm._v(" "),
     _c("div", { attrs: { id: "tab-content" } }, [
       _c(
-        "p",
-        { staticClass: "is-active", attrs: { "data-content": "basketball" } },
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.selected_tab === "basketball",
+              expression: "selected_tab === 'basketball'"
+            }
+          ]
+        },
         [_c("basketball")],
         1
       ),
       _vm._v(" "),
-      _c("p", { attrs: { "data-content": "music" } }, [_c("music")], 1),
-      _vm._v(" "),
-      _c("p", { attrs: { "data-content": "scuba" } }, [_c("scuba")], 1),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.selected_tab === "music",
+              expression: "selected_tab === 'music'"
+            }
+          ]
+        },
+        [_c("music")],
+        1
+      ),
       _vm._v(" "),
       _c(
-        "p",
-        { attrs: { "data-content": "development" } },
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.selected_tab === "scuba",
+              expression: "selected_tab === 'scuba'"
+            }
+          ]
+        },
+        [_c("scuba")],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.selected_tab === "development",
+              expression: "selected_tab === 'development'"
+            }
+          ]
+        },
         [_c("development")],
         1
       )
@@ -50366,71 +50554,63 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "tabs is-toggle is-fullwidth", attrs: { id: "tabs" } },
-      [
-        _c("ul", [
-          _c(
-            "li",
-            { staticClass: "is-active", attrs: { "data-tab": "basketball" } },
-            [
-              _c("a", [
-                _c("span", { staticClass: "icon is-small" }, [
-                  _c("i", {
-                    staticClass: "fas fa-basketball-ball",
-                    attrs: { "aria-hidden": "true" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Basketball")])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("li", { attrs: { "data-tab": "music" } }, [
-            _c("a", [
-              _c("span", { staticClass: "icon is-small" }, [
-                _c("i", {
-                  staticClass: "fas fa-music",
-                  attrs: { "aria-hidden": "true" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("span", [_vm._v("Music")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { attrs: { "data-tab": "scuba" } }, [
-            _c("a", [
-              _c("span", { staticClass: "icon is-small" }, [
-                _c("img", {
-                  attrs: {
-                    src: __webpack_require__(70),
-                    alt: "scuba icon"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("span", [_vm._v("Scuba")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { attrs: { "data-tab": "development" } }, [
-            _c("a", [
-              _c("span", { staticClass: "icon is-small" }, [
-                _c("i", {
-                  staticClass: "fas fa-laptop",
-                  attrs: { "aria-hidden": "true" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("span", [_vm._v("Development")])
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("a", [
+      _c("span", { staticClass: "icon is-small" }, [
+        _c("i", {
+          staticClass: "fas fa-basketball-ball",
+          attrs: { "aria-hidden": "true" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Basketball")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", [
+      _c("span", { staticClass: "icon is-small" }, [
+        _c("i", {
+          staticClass: "fas fa-music",
+          attrs: { "aria-hidden": "true" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Music")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", [
+      _c("span", { staticClass: "icon is-small" }, [
+        _c("img", {
+          attrs: {
+            src: __webpack_require__(73),
+            alt: "scuba icon"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Scuba")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", [
+      _c("span", { staticClass: "icon is-small" }, [
+        _c("i", {
+          staticClass: "fas fa-laptop",
+          attrs: { "aria-hidden": "true" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Development")])
+    ])
   }
 ]
 render._withStripped = true
@@ -50443,13 +50623,13 @@ if (false) {
 }
 
 /***/ }),
-/* 70 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/scuba-sm.png?2be63f691d104d4b49726aa620152a5c";
 
 /***/ }),
-/* 71 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53130,19 +53310,19 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 72 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(73)
+  __webpack_require__(76)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(75)
+var __vue_script__ = __webpack_require__(78)
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(79)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53181,13 +53361,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 73 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(74);
+var content = __webpack_require__(77);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -53207,7 +53387,7 @@ if(false) {
 }
 
 /***/ }),
-/* 74 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -53221,7 +53401,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 75 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53275,7 +53455,7 @@ $(document).ready(function () {
 });
 
 /***/ }),
-/* 76 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53377,19 +53557,19 @@ if (false) {
 }
 
 /***/ }),
-/* 77 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(78)
+  __webpack_require__(81)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(80)
+var __vue_script__ = __webpack_require__(83)
 /* template */
-var __vue_template__ = __webpack_require__(81)
+var __vue_template__ = __webpack_require__(84)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53428,13 +53608,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 78 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(79);
+var content = __webpack_require__(82);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -53454,7 +53634,7 @@ if(false) {
 }
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -53468,7 +53648,7 @@ exports.push([module.i, "\na[data-v-731dab53] {\n    font-style: italic;\n}\n", 
 
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53496,7 +53676,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53567,49 +53747,25 @@ if (false) {
 }
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/emile-victor-portenart-zjEsQhDD39I-unsplash.jpg?1a4b9c21aa96e06c881d50042fd3983b";
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/jc-dela-cuesta-itqkcMEix64-unsplash.jpg?de47a6a7eb42a4265d97d431b4f5cb2d";
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/rosie-yang-6Bc9E0YwGWI-unsplash.jpg?ba0d40de1c8c33f25ecd81e1a1a52980";
-
-/***/ }),
+/* 86 */,
+/* 87 */,
+/* 88 */,
 /* 89 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/me.jpg?1c9c9f9e070891b59b93996a9d81feed";
+module.exports = "/images/alexandra-rose-ccWJHxUeM7c-unsplash.jpg?e98d2d25443c3b73c85712ed07939dbb";
 
 /***/ }),
 /* 90 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/sebastian-pena-lambarri-7i5HMCGupVw-unsplash.jpg?519432ec350f72e53d866b8e3e5e936e";
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/sebastian-pena-lambarri-ld4VubWXTuI-unsplash.jpg?c6b7285dca06ce1ec409f79160eb2ad1";
+module.exports = "/images/gerald-schombs-BqySllTmBhk-unsplash.jpg?d630ad4c1f49de9559f9bde3bf01a21f";
 
 /***/ })
 /******/ ]);
