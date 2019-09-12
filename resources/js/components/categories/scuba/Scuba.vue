@@ -44,16 +44,17 @@
 
     .top_image {
         display: inline;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         vertical-align: middle;
-        width: 200px;
+        /*width: 200px;*/
+        max-height: 13em;
     }
 
     .images_parent {
         display: block;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         position: relative;
         top: 90px;
         height: auto;

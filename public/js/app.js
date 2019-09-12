@@ -14775,7 +14775,7 @@ var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(52)
 /* template */
-var __vue_template__ = __webpack_require__(53)
+var __vue_template__ = __webpack_require__(58)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -14818,7 +14818,7 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(18);
-module.exports = __webpack_require__(85);
+module.exports = __webpack_require__(92);
 
 
 /***/ }),
@@ -14832,10 +14832,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_categories_Navbar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_categories_Footer__);
 
 
@@ -49564,7 +49564,7 @@ var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(49)
 /* template */
-var __vue_template__ = __webpack_require__(72)
+var __vue_template__ = __webpack_require__(79)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -49683,11 +49683,11 @@ module.exports = function listToStyles (parentId, list) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__basketball_Basketball__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__basketball_Basketball___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__basketball_Basketball__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__music_Music__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__music_Music__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__music_Music___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__music_Music__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scuba_Scuba___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scuba_Scuba__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_Development__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_Development__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_Development___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__development_Development__);
 //
 //
@@ -49813,6 +49813,16 @@ exports.push([module.i, "\n.images[data-v-a199d1f2] {\n    display: inline-block
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img_basketball_emile_victor_portenart_zjEsQhDD39I_unsplash_jpg__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img_basketball_emile_victor_portenart_zjEsQhDD39I_unsplash_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__img_basketball_emile_victor_portenart_zjEsQhDD39I_unsplash_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_basketball_jc_dela_cuesta_itqkcMEix64_unsplash_jpg__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_basketball_jc_dela_cuesta_itqkcMEix64_unsplash_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__img_basketball_jc_dela_cuesta_itqkcMEix64_unsplash_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_basketball_rosie_yang_6Bc9E0YwGWI_unsplash_jpg__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_basketball_rosie_yang_6Bc9E0YwGWI_unsplash_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__img_basketball_rosie_yang_6Bc9E0YwGWI_unsplash_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_basketball_radek_ijh6OPRrwO8_unsplash_jpg__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_basketball_radek_ijh6OPRrwO8_unsplash_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__img_basketball_radek_ijh6OPRrwO8_unsplash_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__img_basketball_yassine_khalfalli_WVv_oO_IQy8_unsplash_jpg__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__img_basketball_yassine_khalfalli_WVv_oO_IQy8_unsplash_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__img_basketball_yassine_khalfalli_WVv_oO_IQy8_unsplash_jpg__);
 //
 //
 //
@@ -49839,6 +49849,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+
+
+
+
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Basketball',
@@ -49847,75 +49866,178 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       second: 0,
       pos: 0,
-      img: ['../../../../img/basketball/emile-victor-portenart-zjEsQhDD39I-unsplash.jpg', '../../../../img/basketball/jc-dela-cuesta-itqkcMEix64-unsplash.jpg', '../../../../img/basketball/rosie-yang-6Bc9E0YwGWI-unsplash.jpg', '../../../../img/basketball/radek-ijh6OPRrwO8-unsplash.jpg', '../../../../img/basketball/yassine-khalfalli-WVv_oO-IQy8-unsplash.jpg']
+      images: [{ title: 'bb0', link: __WEBPACK_IMPORTED_MODULE_0__img_basketball_emile_victor_portenart_zjEsQhDD39I_unsplash_jpg___default.a, width: 0 }, { title: 'bb1', link: __WEBPACK_IMPORTED_MODULE_1__img_basketball_jc_dela_cuesta_itqkcMEix64_unsplash_jpg___default.a, width: 0 }, { title: 'bb2', link: __WEBPACK_IMPORTED_MODULE_2__img_basketball_rosie_yang_6Bc9E0YwGWI_unsplash_jpg___default.a, width: 0 }, { title: 'bb3', link: __WEBPACK_IMPORTED_MODULE_3__img_basketball_radek_ijh6OPRrwO8_unsplash_jpg___default.a, width: 0 }, { title: 'bb4', link: __WEBPACK_IMPORTED_MODULE_4__img_basketball_yassine_khalfalli_WVv_oO_IQy8_unsplash_jpg___default.a, width: 0 }]
+      // img: [BB0, BB1, BB2, BB3, BB4],
+      // i: [
+      //   { title: 'bb0', img: require('../../../../img/basketball/emile-victor-portenart-zjEsQhDD39I-unsplash.jpg') },
+      //   { title: 'bb1', img: require('../../../../img/basketball/jc-dela-cuesta-itqkcMEix64-unsplash.jpg') },
+      //   { title: 'bb2', img: require('../../../../img/basketball/rosie-yang-6Bc9E0YwGWI-unsplash.jpg') },
+      //   { title: 'bb3', img: require('../../../../img/basketball/radek-ijh6OPRrwO8-unsplash.jpg') },
+      //   { title: 'bb4', img: require('../../../../img/basketball/yassine-khalfalli-WVv_oO-IQy8-unsplash.jpg') },
+      // ],
+      // width: 0,
     };
   },
   mounted: function mounted() {
-    var _this = this;
+    // window.setInterval(() => { this.getMS() }, 2000)
 
-    window.setInterval(function () {
-      _this.getMS();
-    }, 2000);
+    // setInterval(() => {this.setImgWidths()}, 2000)
+    // this.$nextTick(() => {
+    //   console.log(this.images)
+    //   this.setImgWidths()
+    // })
+
+    console.log('refs mounted:', this.$refs);
+    this.setImgWidths();
   },
 
+
+  computed: {
+    images_array: function images_array() {
+      var img = [];
+      for (var i = 0, j = this.images.length; i < j; i++) {
+        img.push({ id: i, img: '<img src="' + this.images[i].link + '" id="' + this.images[i].title + '">' });
+      }
+      return img;
+    }
+  },
 
   methods: {
     getMS: function getMS() {
       var ms = new Date();
       this.second = ms.getMilliseconds();
       this.pos = this.pos > 1 ? 0 : this.pos + 1;
+    },
+    setImgWidth: function setImgWidth(event) {
+      console.log(event);
+      var img = event.target;
+      // this.width = img.clientWidth;
+      var width = img.clientWidth;
+      console.log('set => img:', img, 'width=' + width);
+      // console.log(`image:`, image)
+      // console.log(`obj:`, obj)
+      // console.log(this)
+      // img.width = img.clientWidth;
+      // return img.clientWidth
+    },
+    setImgWidths: function setImgWidths() {
+      // let img = event.target;
+      // // this.width = img.clientWidth;
+      // let width = img.clientWidth
+      // console.log(`get => img:`, img, `width=${width}`)
+      // return width
+      // return document.getElementById(id).clientWidth
+      // return this.$refs.id.clientWidth
+
+      // console.log(`refs1:`, this.$refs)
+
+      // https://stackoverflow.com/questions/44948714/get-element-height-with-vuejs
+      // https://stackoverflow.com/questions/45563329/how-to-add-dynamic-ref-in-vue-js
+      for (var i = 0, j = this.images.length; i < j; i++) {
+        var id = this.images[i].title;
+        // console.log(`id=${id} => ref[${i}]: ${this.$refs[i]} => elem:`, document.getElementById(id))
+        // let width = document.getElementById(id).clientWidth
+        // let width = this.$refs[i].clientWidth
+        // console.log(`id=${id} => width=${width} => elem:`, document.getElementById(id))
+        console.log('id=' + id, this.$refs[id], this.$refs[id][0]);
+        console.log('id=' + id + ' => width=' + this.$refs[id][0].clientWidth);
+        // this.images[i].width = this.$refs[id].clientWidth
+        // console.log(this.$refs.(this.images[i].title).clientWidth)
+        // this.images[i].width = width
+      }
+
+      // console.log(`refs2:`, this.$refs)
+    },
+    getWidth: function getWidth(id) {
+      alert(document.getElementById(id).clientWidth);
     }
   }
 });
 
 /***/ }),
 /* 53 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/emile-victor-portenart-zjEsQhDD39I-unsplash.jpg?1a4b9c21aa96e06c881d50042fd3983b";
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/jc-dela-cuesta-itqkcMEix64-unsplash.jpg?de47a6a7eb42a4265d97d431b4f5cb2d";
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/rosie-yang-6Bc9E0YwGWI-unsplash.jpg?ba0d40de1c8c33f25ecd81e1a1a52980";
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/radek-ijh6OPRrwO8-unsplash.jpg?ad3fad686cdaf3d5b93b72aade106da3";
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/yassine-khalfalli-WVv_oO-IQy8-unsplash.jpg?e57c7bfb9a3ae0ac6d9e234c012853b5";
+
+/***/ }),
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "basketball" }, [
-    _c("div", { staticClass: "images" }, [
-      _c("img", {
-        staticClass: "top_image",
-        attrs: { src: _vm.img[_vm.pos], alt: "basketball court" }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "images" }, [
-      _c("img", {
-        staticClass: "top_image",
-        attrs: { src: _vm.img[_vm.pos + 1], alt: "basketball court" }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "images" }, [
-      _c("img", {
-        staticClass: "top_image",
-        attrs: { src: _vm.img[_vm.pos + 2], alt: "basketball court" }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "images" }, [
-      _c("img", {
-        staticClass: "top_image",
-        attrs: { src: _vm.img[_vm.pos + 3], alt: "basketball court" }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "images" }, [
-      _c("img", {
-        staticClass: "top_image",
-        attrs: { src: _vm.img[_vm.pos + 4], alt: "basketball court" }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "component_content" }, [
-      _vm._v("\n        BASKETBALL " + _vm._s(_vm.second) + "\n    ")
-    ])
-  ])
+  return _c(
+    "div",
+    { staticClass: "basketball" },
+    [
+      _vm._l(_vm.images, function(image) {
+        return _c("div", { staticClass: "images" }, [
+          _c("img", {
+            ref: image.title,
+            refInFor: true,
+            staticClass: "top_image",
+            attrs: { src: image.link, alt: "basketball court", id: image.title }
+          }),
+          _vm._v(" "),
+          _c("div", [
+            _c(
+              "button",
+              {
+                on: {
+                  click: function($event) {
+                    return _vm.getWidth(image.title)
+                  }
+                }
+              },
+              [_vm._v(_vm._s(image.title))]
+            ),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(
+              "\n            image.width=" + _vm._s(image.width) + "\n        "
+            )
+          ])
+        ])
+      }),
+      _vm._v(" "),
+      _c("button", { on: { click: _vm.setImgWidths } }, [_vm._v("setWidths")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "component_content" }, [
+        _vm._v(
+          "\n        BASKETBALL " +
+            _vm._s(_vm.second) +
+            " this is for testing\n    "
+        )
+      ])
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -49928,19 +50050,19 @@ if (false) {
 }
 
 /***/ }),
-/* 54 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(55)
+  __webpack_require__(60)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(57)
+var __vue_script__ = __webpack_require__(62)
 /* template */
-var __vue_template__ = __webpack_require__(58)
+var __vue_template__ = __webpack_require__(63)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -49979,13 +50101,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 55 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(56);
+var content = __webpack_require__(61);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50005,7 +50127,7 @@ if(false) {
 }
 
 /***/ }),
-/* 56 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -50019,7 +50141,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 57 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50036,7 +50158,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 58 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50056,19 +50178,19 @@ if (false) {
 }
 
 /***/ }),
-/* 59 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(60)
+  __webpack_require__(65)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(62)
+var __vue_script__ = __webpack_require__(67)
 /* template */
-var __vue_template__ = __webpack_require__(63)
+var __vue_template__ = __webpack_require__(68)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50107,13 +50229,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 60 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(61);
+var content = __webpack_require__(66);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50133,7 +50255,7 @@ if(false) {
 }
 
 /***/ }),
-/* 61 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -50141,13 +50263,13 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*.images {*/\n/*    display: inline-block;*/\n/*    position: relative;*/\n/*    float: left;*/\n/*}*/\n.top_image[data-v-08c991f1] {\n    display: inline;\n    margin: 0px;\n    padding: 0px;\n    vertical-align: middle;\n    width: 200px;\n}\n.images_parent[data-v-08c991f1] {\n    display: block;\n    margin: 0px;\n    padding: 0px;\n    position: relative;\n    top: 90px;\n    height: auto;\n    max-width: auto;\n    overflow-y: hidden;\n    overflow-x: auto;\n    word-wrap: normal;\n    white-space: nowrap;\n}\n\n/*.images_parent {*/\n/*    white-space: nowrap;*/\n/*}*/\n\n/*.row::after {*/\n/*    content: \"\";*/\n/*    clear: both;*/\n/*    display: table;*/\n/*}*/\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*.images {*/\n/*    display: inline-block;*/\n/*    position: relative;*/\n/*    float: left;*/\n/*}*/\n.top_image[data-v-08c991f1] {\n    display: inline;\n    margin: 0;\n    padding: 0;\n    vertical-align: middle;\n    /*width: 200px;*/\n    max-height: 13em;\n}\n.images_parent[data-v-08c991f1] {\n    display: block;\n    margin: 0;\n    padding: 0;\n    position: relative;\n    top: 90px;\n    height: auto;\n    max-width: auto;\n    overflow-y: hidden;\n    overflow-x: auto;\n    word-wrap: normal;\n    white-space: nowrap;\n}\n\n/*.images_parent {*/\n/*    white-space: nowrap;*/\n/*}*/\n\n/*.row::after {*/\n/*    content: \"\";*/\n/*    clear: both;*/\n/*    display: table;*/\n/*}*/\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 62 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50189,7 +50311,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 63 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50208,7 +50330,7 @@ var staticRenderFns = [
         _c("img", {
           staticClass: "top_image",
           attrs: {
-            src: __webpack_require__(64),
+            src: __webpack_require__(69),
             alt: "scuba image"
           }
         }),
@@ -50216,7 +50338,7 @@ var staticRenderFns = [
         _c("img", {
           staticClass: "top_image",
           attrs: {
-            src: __webpack_require__(90),
+            src: __webpack_require__(70),
             alt: "scuba image"
           }
         }),
@@ -50224,7 +50346,7 @@ var staticRenderFns = [
         _c("img", {
           staticClass: "top_image",
           attrs: {
-            src: __webpack_require__(65),
+            src: __webpack_require__(71),
             alt: "me scuba"
           }
         }),
@@ -50232,7 +50354,7 @@ var staticRenderFns = [
         _c("img", {
           staticClass: "top_image",
           attrs: {
-            src: __webpack_require__(66),
+            src: __webpack_require__(72),
             alt: "scuba image"
           }
         }),
@@ -50240,7 +50362,7 @@ var staticRenderFns = [
         _c("img", {
           staticClass: "top_image",
           attrs: {
-            src: __webpack_require__(89),
+            src: __webpack_require__(73),
             alt: "scuba image"
           }
         })
@@ -50262,37 +50384,49 @@ if (false) {
 }
 
 /***/ }),
-/* 64 */
+/* 69 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/sebastian-pena-lambarri-7i5HMCGupVw-unsplash.jpg?519432ec350f72e53d866b8e3e5e936e";
 
 /***/ }),
-/* 65 */
+/* 70 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/gerald-schombs-BqySllTmBhk-unsplash.jpg?d630ad4c1f49de9559f9bde3bf01a21f";
+
+/***/ }),
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/me.jpg?1c9c9f9e070891b59b93996a9d81feed";
 
 /***/ }),
-/* 66 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/sebastian-pena-lambarri-ld4VubWXTuI-unsplash.jpg?c6b7285dca06ce1ec409f79160eb2ad1";
 
 /***/ }),
-/* 67 */
+/* 73 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/alexandra-rose-ccWJHxUeM7c-unsplash.jpg?e98d2d25443c3b73c85712ed07939dbb";
+
+/***/ }),
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(68)
+  __webpack_require__(75)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(70)
+var __vue_script__ = __webpack_require__(77)
 /* template */
-var __vue_template__ = __webpack_require__(71)
+var __vue_template__ = __webpack_require__(78)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50331,13 +50465,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 68 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(69);
+var content = __webpack_require__(76);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50357,7 +50491,7 @@ if(false) {
 }
 
 /***/ }),
-/* 69 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -50371,7 +50505,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 70 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50388,7 +50522,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 71 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50410,7 +50544,7 @@ if (false) {
 }
 
 /***/ }),
-/* 72 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50588,7 +50722,7 @@ var staticRenderFns = [
       _c("span", { staticClass: "icon is-small" }, [
         _c("img", {
           attrs: {
-            src: __webpack_require__(73),
+            src: __webpack_require__(80),
             alt: "scuba icon"
           }
         })
@@ -50623,13 +50757,13 @@ if (false) {
 }
 
 /***/ }),
-/* 73 */
+/* 80 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/scuba-sm.png?2be63f691d104d4b49726aa620152a5c";
 
 /***/ }),
-/* 74 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53310,19 +53444,19 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 75 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(76)
+  __webpack_require__(83)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(78)
+var __vue_script__ = __webpack_require__(85)
 /* template */
-var __vue_template__ = __webpack_require__(79)
+var __vue_template__ = __webpack_require__(86)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53361,13 +53495,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 76 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(77);
+var content = __webpack_require__(84);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -53387,7 +53521,7 @@ if(false) {
 }
 
 /***/ }),
-/* 77 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -53401,7 +53535,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 78 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53455,7 +53589,7 @@ $(document).ready(function () {
 });
 
 /***/ }),
-/* 79 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53557,19 +53691,19 @@ if (false) {
 }
 
 /***/ }),
-/* 80 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(81)
+  __webpack_require__(88)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(83)
+var __vue_script__ = __webpack_require__(90)
 /* template */
-var __vue_template__ = __webpack_require__(84)
+var __vue_template__ = __webpack_require__(91)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53608,13 +53742,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 81 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(82);
+var content = __webpack_require__(89);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -53634,7 +53768,7 @@ if(false) {
 }
 
 /***/ }),
-/* 82 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -53648,7 +53782,7 @@ exports.push([module.i, "\na[data-v-731dab53] {\n    font-style: italic;\n}\n", 
 
 
 /***/ }),
-/* 83 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53676,7 +53810,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 84 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53747,25 +53881,10 @@ if (false) {
 }
 
 /***/ }),
-/* 85 */
+/* 92 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/alexandra-rose-ccWJHxUeM7c-unsplash.jpg?e98d2d25443c3b73c85712ed07939dbb";
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/gerald-schombs-BqySllTmBhk-unsplash.jpg?d630ad4c1f49de9559f9bde3bf01a21f";
 
 /***/ })
 /******/ ]);
